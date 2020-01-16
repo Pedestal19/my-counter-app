@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppCounterComponent implements OnInit {
 
+  ngOnInit(): void {
+    this.count = 0
+  }
+
+  count: number = 0;
+
   constructor() { }
 
-  ngOnInit() {
+  increment(){
+    this.count++;
+  }
+
+  decrement(){
+    this.count--;
   }
 
 }
